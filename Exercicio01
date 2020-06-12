@@ -1,3 +1,8 @@
+//Fazer um programa que leia as informaçoes de Idade, Sexo e Salario;
+//Informar a Media dos Salários;
+//A Maior e a Menor Idade;
+//A quantidade de Mulheres com Salário menor ou igual a R$1500,00.
+//A idade e o Sexo da pessoa que possui o menor salário. 
 public class Exercicio01{
 	public static void main(String[] args){
 		int idade = 0, maiorIdade = 0, menorIdade = 0, cont = 0,  salarioMulher = 0;
@@ -38,4 +43,8 @@ public class Exercicio01{
 		System.out.printf("A media de salarios eh %.0f\n", mediaSalario);
 		System.out.printf("A maior idade %d e a menor idade %d\n", maiorIdade, menorIdade);
 		System.out.printf("A quantidade de Mulher com Salario abaixo de RS 1500,00 eh %d\n", salarioMulher);
+	}
 }
+
+		
+		
