@@ -1,0 +1,41 @@
+public class Exercicio01{
+	public static void main(String[] args){
+		int idade = 0, maiorIdade = 0, menorIdade = 0, cont = 0,  salarioMulher = 0;
+		double salario, menorSalario = 0, mediaSalario;
+		String sexo;
+		
+		System.out.println("*** DIGITE AS INFORMACOESOES... ***");
+		System.out.println();
+		
+		do {
+					
+			System.out.println("Informe a Idade: ");
+			idade = Integer.parseInt(System.console().readLine());
+								
+			System.out.println("Informe o Sexo: ");
+			sexo = System.console().readLine();
+		
+			System.out.println("Informe o Salario: ");
+			salario = Double.parseDouble(System.console().readLine());
+			mediaSalario = salario ++;
+						
+			if(maiorIdade < idade)
+				maiorIdade = idade;
+			else if(menorIdade > idade) 
+				menorIdade = idade;
+			
+			if(menorSalario > salario)
+				menorSalario = salario;
+			
+			if((sexo.equals ("F")) && (salario < 1500))
+				salarioMulher ++;		
+				cont++;
+		
+		}while(idade > 0);
+			
+			mediaSalario = mediaSalario / cont;
+			
+		System.out.printf("A media de salarios eh %.0f\n", mediaSalario);
+		System.out.printf("A maior idade %d e a menor idade %d\n", maiorIdade, menorIdade);
+		System.out.printf("A quantidade de Mulher com Salario abaixo de RS 1500,00 eh %d\n", salarioMulher);
+}
